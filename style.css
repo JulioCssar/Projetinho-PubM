@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  background-color: #37a5ff;
+}
+
+#options {
+  text-align: center;
+}
+
+header {
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#instituicoes {
+  padding: 120px;
+  margin-top: 100px;
+
+}
+
+#instituicoes ul a {
+  display: inline-block;
+  margin-right: 30px; 
+  margin-bottom: 30px;
+}
+
+#ongs ul a {
+  display: inline-block;
+  margin-right: 30px; 
+  margin-bottom: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline;
+  padding: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+#instituicoes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#instituicoes ul img {
+  margin-right: 10px;
+  width: 300px;
+}
+
+.image-with-shadow1 {
+  box-shadow: 0 4px 6px #633493;
+  transition: transform 0.3s;
+}
+
+.image-with-shadow1:hover {
+  transform: scale(1.2);
+}
+
+.image-with-shadow2 {
+  box-shadow: 0 4px 6px rgb(248, 248, 248);
+  transition: transform 0.3s;
+}
+
+.image-with-shadow2:hover {
+  transform: scale(1.2);
+}
+
+.ongs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgong {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.ong-description {
+  margin: 0;
+}
+
+.imgong {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.imgong {
+  transition: transform 0.3s;
+}
+
+.imgong:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 6px #633493;
+  border-radius: 10px;
+}
+
+#doacoes p {
+  color: #f2f2f2;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  color: #633493;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+}
+
+a {
+  color: #633493;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 22px;
+}
+
+h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  color: #633493;
+  transition: transform 0.3s;
+}
+
+h2:hover {
+  transform: scale(1.2);
+}
+
+h2:hover {
+  color: #f2f2f2;
+}
+
+h2:hover::first-letter {
+  color: #633493;
+}
+
+footer {
+  background-color: transparent;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer #logo {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #633493;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px;
+  }
+
+  #instituicoes ul img {
+    margin-bottom: 10px;
+  }
+
+  .imgong {
+    width: 150px;
+  }
+
+  #ongs .imgong {
+    width: 150px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer #logo {
+    width: 150px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    margin: 5px 10px;
+  }
+}

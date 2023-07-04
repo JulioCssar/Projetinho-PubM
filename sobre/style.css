@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #37a5ff;
+}
+
+header {
+  background-color: #fff;
+  color: #633493;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  margin: 0;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: 'Shadows Into Light', cursive;
+  color: #633493;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  color: #ffffffe1;
+  padding: 20px;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: transparent;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer #logo {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #633493;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+/* responsividade */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  main {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .footer #logo {
+    width: 150px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    margin: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  main {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .footer #logo {
+    width: 100px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    margin: 3px 5px;
+  }
+}
