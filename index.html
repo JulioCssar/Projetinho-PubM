@@ -8,8 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-  <link rel="icon" href="img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
 
+  <link rel="icon" href="img/icon.png" type="image/x-icon">
+  <script src="assets/main.js" type="text/javascript" defer></script>
   <title>Por um Bem MAIOR</title>
 </head>
 
@@ -17,6 +19,7 @@
   <div class="center">
     <header id="options">
       <h1>Por um Bem MAIOR :)</h1>
+
       <nav>
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -25,21 +28,21 @@
         </ul>
       </nav>
     </header>
-  
+
     <section id="instituicoes">
       <h2>Apoie a causa</h2>
       <ul>
         <a href="https://programadoresdoamanha.org" target="_blank">
           <img src="img/pda.jpg" alt="" class="image-with-shadow1">
-          <p>Programadores do Amanhã</p>
+          <p id="subdescricao">Programadores do Amanhã</p>
         </a>
         <a href="https://gerandofalcoes.com" target="_blank">
           <img src="img/gerf.jpg" alt="" class="image-with-shadow2">
-          <p>Gerando Falcões</p>
+          <p id="subdescricao">Gerando Falcões</p>
         </a>
       </ul>
     </section>
-  
+
     <section id="ongs">
       <h2>ONGs que Precisam de Ajuda</h2>
       <ul class="ongs-list">
@@ -60,29 +63,104 @@
         </li>
       </ul>
     </section>
-  
-    <section id="doacoes">
-      <h2>Como Fazer Doações</h2>
-      <p>Escolha a instituição ou ONG que deseja ajudar, clique e você será direcionado para o site oficial. Lá você poderá fazer sua doação e conhecer o projeto por completo.</p>
-    </section>
-  
+
     <section id="sobre">
       <a href="sobre/about.html" target="_blank">
         <h2>Saiba mais</h2>
       </a>
+      <p>Entenda mais sobre as instituições acima</p>
     </section>
-  
+
+    <!-- área pet -->
+    <div class="petclick">
+      <a href="areapet/index.html">
+        <h2>Apoio aos Animais</h2>
+      </a>
+      <p>Explore ONGs comprometidas em proteger e cuidar de animais de estimação em situação de risco. Faça a diferença
+        na vida desses animais!</p>
+    </div>
+
+    <section id="doacoes">
+      <h2>Como Fazer Doações</h2>
+      <p>Escolha a instituição ou ONG que deseja ajudar, clique e você será direcionado para o site oficial. Lá você
+        poderá fazer sua doação e conhecer o projeto por completo.</p>
+    </section>
+
+
+    <section class="center">
+      <h2>Ajude Compartilhando!</h2>
+      <p>Clique no botão para copiar o link do site e compartilhe na rede social que desejar</p>
+      <!-- botão de compartilhamento -->
+      <button class="cssbuttons-io" id="copy-button">
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path fill="currentColor"
+              d="M9 2a1 1 0 0 0-1 1v2H4v16h12v-4h2a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-4V2h-2zm7 2v2H8V4h8zM8 8v2h8V8H8zm0 4v2h4v-2H8z">
+            </path>
+          </svg> Copiar</span>
+      </button>
+    </section>
+
+
+
+    <!-- icons -->
+    <div class="social-buttons">
+      <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjt45O-p4CAAxXUD7kGHbagDI4QFnoECA8QAQ&url=https%3A%2F%2Fbr.linkedin.com%2F&usg=AOvVaw2SBY7l_GSJomHDs9LB4qMx&cshid=1688860570131010&opi=89978449"
+        class="social-button linkedin">
+        <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Icons" stroke="none" stroke-width="1">
+            <g transform="translate(-702.000000, -265.000000)">
+              <path
+                d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+                id="LinkedIn">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </a>
+
+      </a>
+      <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiVv8uFqICAAxXSELkGHc4HD7AQFnoECA4QAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449"
+        class="social-button instagram">
+        <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1">
+            <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+              <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path
+                  d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                  id="instagram-[#167]">
+
+                </path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </div>
+    </section>
+
+
+
+
+    <!--  -->
+
     <footer>
       <div class="footer">
-        <p>&copy; <img src="img/logoPUBM-.png" alt="Logo da Empresa" id="logo"> </p>
+
         <ul class="footer-links">
           <a href="sobre/indextwo.html" target="_blank">Saiba mais sobre a ideia</a>
-          <a href="https://www.linkedin.com/in/júlio-césar-dev/">Criador</a>
+          <p>&copy; <img src="img/logoPUBM-.png" alt="Logo da Empresa" id="logo"> </p>
+          <!-- <a href="https://www.linkedin.com/in/júlio-césar-dev/">Criador</a> -->
         </ul>
       </div>
     </footer>
   </div>
-  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
