@@ -2,7 +2,6 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   background: linear-gradient(to bottom, #37a5ff, #7f52ac 60%);
-  
 }
 
 .logo {
@@ -24,7 +23,6 @@ body {
 .help-ongs {
   text-align: center;
   color: #ffffff;
-  /* font-family: 'Caveat', cursive; */
   font-family: 'Shadows Into Light', cursive;
   font-size: 15px;
 }
@@ -33,18 +31,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* background-image: linear-gradient(to right, #a9d6b8, #f4f4f4, #a3cde7, #f6c1c7, #f9b77d, #ece1d1);
-  width: 100%; */
   border-radius: 20px;
-  /* box-shadow: 0 4px 4px rgb(255, 254, 254); */
 }
 
 .logos-container img {
   width: 150px;
-  /* Ajuste o tamanho das logos conforme necessário */
   height: auto;
   margin: 15px;
-  /* Ajuste o espaçamento entre as logos conforme necessário */
 }
 
 .imgpets {
@@ -54,7 +47,6 @@ body {
 .janela {
   transition: transform 0.3s;
   box-shadow: 0 4px 10px rgb(244, 244, 244);
-
 }
 
 .janela:hover {
